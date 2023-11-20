@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 
-import {IERC20Metadata} from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
-import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import {IERC20Metadata} from "./IERC20Metadata.sol";
+import {SafeERC20} from "./SafeERC20.sol";
+import {AccessControl} from "./AccessControl.sol";
+import {ReentrancyGuard} from "./ReentrancyGuard.sol";
 
 /// @title Sale contract with lock and vesting
 contract TokenSaleWithLockupAndVesting is ReentrancyGuard, AccessControl {
