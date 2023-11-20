@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import {Ownable} from "./Ownable.sol";
+import {IERC20} from "./IERC20.sol";
+import {ReentrancyGuard} from "./ReentrancyGuard.sol";
 
 interface SaleContractInterface {
     function lockEndTime() external view returns (uint256);
